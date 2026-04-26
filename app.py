@@ -44,7 +44,7 @@ def predict():
         
         # 4. PRA-PEMROSESAN METADATA (Sama seperti Colab)
         # Normalisasi usia (Min-Max: min=5, max=85 asumsi)
-        age_norm = (age - 5) / (85 - 5)
+        age_norm = age / 85.0
         age_norm = max(0.0, min(1.0, age_norm)) # Pastikan di rentang 0-1
         
         # One-Hot Encoding Lokasi Lesi (4 Kategori)
