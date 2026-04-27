@@ -90,5 +90,8 @@ def predict():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    # Jalankan server
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Render memberikan port secara dinamis lewat environment variable
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    # Debug disetel False agar aman di server publik
+    app.run(host='0.0.0.0', port=port, debug=False)
