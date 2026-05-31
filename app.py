@@ -21,7 +21,7 @@ output_details = interpreter.get_output_details()
 
 # B. Load Model Metadata (Keras H5 - MLP)
 # Gunakan compile=False agar Flask tidak bingung mencari fungsi FocalLoss
-MLP_MODEL_PATH = "best_mlp_model.h5"
+MLP_MODEL_PATH = "best_mlp_model.tflite"
 mlp_model = load_model(MLP_MODEL_PATH, compile=False)
 
 # C. Load Meta Info (Agar batas umur dinamis sesuai dataset Colab)
