@@ -1,0 +1,22 @@
+{
+  "mlp_features": [
+    "age_normalized",
+    "sex_encoded",
+    "lokasi_head_neck",
+    "lokasi_lower extremity",
+    "lokasi_oral_genital",
+    "lokasi_upper extremity"
+  ],
+  "age_min": 5.0,
+  "age_max": 85.0,
+  "class_names": [
+    "AKIEC",
+    "BCC",
+    "BKL",
+    "DF",
+    "MEL",
+    "NV",
+    "SCCKA",
+    "VASC"
+  ]
+}
